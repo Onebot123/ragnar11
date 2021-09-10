@@ -26,7 +26,7 @@ module.exports = {
       queue.channel.leave();
       message.client.queue.delete(message.guild.id);
       const endembed = new MessageEmbed().setColor("#FF0000")
-        .setAuthor(`Music Stop `, "https://cdn.discordapp.com/attachments/793225556501987358/831209697280917524/PicsArt_04-12-07.50.28.jpg")
+        .setAuthor(`Music Stop `, "https://media.discordapp.net/attachments/714990437118509066/885686954316939304/4e0ced5b6e4cdffec801177a8995bec6.jpg")
       return queue.textChannel.send(endembed).catch(console.error);
     }
 
