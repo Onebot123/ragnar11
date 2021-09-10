@@ -20,16 +20,16 @@ module.exports = {
     .setDescription(`
 
 <a:discord:813406342173818910> | **User Commands**
-> **invite(inv) • support • about • ping • prefix • uptime • se • avatar • serverinfo(sifo)**
+> **\`invite(inv)\` • \`support\` • \`about\` • \`ping\` • \`prefix\` • \`uptime\` • \`se\` • \`avatar\` • \`serverinfo(sifo)\`**
 
 <a:dark:813714900777959444> | **Music Commands**
-> **play • skip • skipto • stop • volume • nowplaying • shuffle • search • resume • remove • queue • filter • loop • lyrics • radio**
+> **\`play\` • \`skip\` • \`skipto\` • \`stop\` • \`volume\` • \`nowplaying\` • \`shuffle\` • \`search\` • \`resume\` • \`remove\` • \`queue\` • \`filter\` • \`loop\` • \`lyrics\` • \`radio\`**
 
 <a:setting:813404135181385759> | **Fun Commands**
-> **lock(l) • unlock(ul) • giveaway • bans • embed • slowmode • say • cv**
+> **\`lock(l)\` • \`unlock(ul)\` • \`giveaway\` • \`bans\` • \`embed\` • \`slowmode\` • \`say\` • \`cv\`**
 
 <:emoji_61:827114330608107531> | **Gif Commands**
-> **boy • girl • smokesoon • babysoon**
+> **\`boy\` • \`girl\` • \`anime\` • \`hug\` • \`slap\`**
 
 <a:links:813729922643263558> | Links
 [SUPPORT](https://discord.gg/DDtRN4qK63)    -    [INVITE](https://discord.com/api/oauth2/authorize?client_id=800348653680197662&permissions=8&scope=bot)
