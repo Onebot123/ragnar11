@@ -105,10 +105,10 @@ client.on(`message`, async (message) => {
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("#FF0000")
-    .setAuthor("MoonBot", "https://cdn.discordapp.com/avatars/807289119193432125/bdc5bd20f5aa21e29341f280d76d75e5.png?size=2048")
+    .setAuthor("SnooBot", "https://cdn.discordapp.com/avatars/807289119193432125/bdc5bd20f5aa21e29341f280d76d75e5.png?size=2048")
     .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
     .setDescription(`
-**[Moon Bot Stats](https://discord.com/oauth2/authorize?client_id=807289119193432125&permissions=8&scope=bot)**
+**[Snoo Bot Stats](https://discord.com/api/oauth2/authorize?client_id=800348653680197662&permissions=8&scope=bot)**
 
 **My Devloper :**
 <@712407561676259418> 
@@ -149,15 +149,15 @@ client.on(`message`, async (message) => {
     .setImage(`https://cdn.discordapp.com/attachments/827166558714593290/830464718623080488/standard_8.gif`)
     .setDescription (`
     Links
-Link Server 
+Server 
 [Support](https://discord.gg/DDtRN4qK63)
 -
-Link Bot
-[Invite](https://discord.com/oauth2/authorize?client_id=807289119193432125&permissions=8&scope=bot)`)
+Bot
+[Invite](https://discord.com/api/oauth2/authorize?client_id=800348653680197662&permissions=8&scope=bot)`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(``)
-    .setTitle(`**Suuport MoonBot**`) 
-    .setThumbnail(`https://cdn.discordapp.com/attachments/793225556501987358/831209697280917524/PicsArt_04-12-07.50.28.jpg`)
+    .setTitle(`**Suuport SnooBot**`) 
+    .setThumbnail(`https://media.discordapp.net/attachments/714990437118509066/885686954316939304/4e0ced5b6e4cdffec801177a8995bec6.jpg`)
     .setTimestamp()
     
     //send the Message
@@ -344,30 +344,30 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(PREFIX + "smoke")) {
+  if (message.content.startsWith(PREFIX + "anime")) {
     let man = [
-      "https://cdn.discordapp.com/attachments/755893014915711047/829996822042902548/baby_lorenzo___Tumblr.gif",
-      "https://cdn.discordapp.com/attachments/755893014915711047/830019629137133638/a_bf2b256a73738ec077e555cd129a636b.gif",
-      "https://cdn.discordapp.com/attachments/755893014915711047/831784931843637248/a_1a06feef2d97c2e9f563f2a8a7f65ddd.gif",
-      "https://cdn.discordapp.com/attachments/755893014915711047/831784932623515648/20210305_082905.gif",
-      "https://cdn.discordapp.com/attachments/755893014915711047/831784932387848192/a_f3d97c3e3acc18fc7aa2a4b9658da821.gif",
-      "https://cdn.discordapp.com/attachments/755893014915711047/829989116800008222/image0.gif",
-      "https://cdn.discordapp.com/attachments/755893014915711047/829996732443656232/Smoking_Gif.gif",
-      "https://cdn.discordapp.com/attachments/755893014915711047/829996773028003870/Animated_GIF.gif",
-      "https://cdn.discordapp.com/attachments/755893014915711047/829996813489537074/KURALSIZ.gif",
-      "https://cdn.discordapp.com/attachments/755893014915711047/829996798847614996/Soguk_Nefes-2.gif",
-      "https://cdn.discordapp.com/attachments/755893014915711047/829594717859348480/20.gif",
-      "https://cdn.discordapp.com/attachments/755893014915711047/829725183086034954/mirakaanman_97.gif",
-      "https://cdn.discordapp.com/attachments/755893014915711047/829725196289703967/m2.gif",
-      "https://cdn.discordapp.com/attachments/755893014915711047/829842259709132830/ContaAbimiz_228.gif",
-      "https://cdn.discordapp.com/attachments/755893014915711047/829842189344309308/ContaAbimiz_71.gif",
-      "https://cdn.discordapp.com/attachments/755893014915711047/829244439310106664/Nikolaj_Coster-Waldau_Gif_Hunt.gif"
+      "https://media.discordapp.net/attachments/608711485849337856/855998757451989002/image0-2.gif",
+      "https://media.discordapp.net/attachments/608711485849337856/856002084461084682/image0-4.gif",
+      "https://media.discordapp.net/attachments/608711485849337856/856046302302044190/RAGE.gif",
+      "https://media.discordapp.net/attachments/608711485849337856/856064006099959838/sword_in.gif",
+      "https://media.discordapp.net/attachments/608711485849337856/856064373285322772/brur.gif",
+      "https://media.discordapp.net/attachments/608711485849337856/856078080513671218/main-qimg-9b85288a288ad40533d86370edc2f861.gif",
+      "https://media.discordapp.net/attachments/608711485849337856/856082677124038706/243b546d229fecd75d49dfa96fa7d3af.gif",
+      "https://media.discordapp.net/attachments/608711485849337856/856083458426273852/1359536E-4B2C-46FD-B4C0-991DEDD90DB6.gif",
+      "https://media.discordapp.net/attachments/608711485849337856/856083601376673812/tumblr_n8afdsLdj31tgrxjfo1_400.gif",
+      "https://media.discordapp.net/attachments/608711485849337856/855944540519399454/a_ebfe24c4bd0d9ccfdfbb26e9c211616b.gif",
+      "https://media.discordapp.net/attachments/608711485849337856/855941510633619496/a_5079b0989b9b5957008426c949ada083.gif",
+      "https://media.discordapp.net/attachments/608711485849337856/855934815643762718/SPOILER_bcfd0735832eb9c8908fb09b3bbd76f7.gif",
+      "https://media.discordapp.net/attachments/608711485849337856/855924849976541214/a_2b58061e423d0ed65d2e1a3e77ed61f8.gif",
+      "https://media.discordapp.net/attachments/608711485849337856/855924705320239114/Anime_PP_Gif_64.gif",
+      "https://media.discordapp.net/attachments/608711485849337856/855924615573143582/Anime_PP_Gif_46.gif",
+      "https://media.discordapp.net/attachments/608711485849337856/855924558700085248/a_3bf21d37deefcf4cd1dcab780aab846c.gif",
     ];
 
     message.channel
       .send({
         embed: {
-          description: `**Gif Smoke**`,
+          description: `Gif Anime`,
           footer: `Requested by ${message.author.username}`,
           color: `#FF0000`,
           image: {
@@ -375,53 +375,12 @@ client.on("message", message => {
           }
         }
       })
-
-.catch(e => {
+      .catch(e => {
         client.log.error(e);
       });
   }
 });
 
-client.on("message", message => {
-  if (message.content.startsWith(PREFIX + "baby")) {
-    let man = [
-      "https://cdn.discordapp.com/attachments/699339066029768796/831815920594714644/750687987473317938.gif",
-      "https://cdn.discordapp.com/attachments/699339066029768796/831875803179909160/1.gif",
-      "https://cdn.discordapp.com/attachments/699339066029768796/831890205606412398/10.gif",
-      "https://cdn.discordapp.com/attachments/699339066029768796/831811050013458462/7.gif",
-      "https://cdn.discordapp.com/attachments/699339066029768796/831811061388804106/2.gif",
-      "https://cdn.discordapp.com/attachments/699339066029768796/831811054383530044/9.gif",
-      "https://cdn.discordapp.com/attachments/699339066029768796/831811092908605440/3.gif",
-      "https://cdn.discordapp.com/attachments/699339066029768796/831811102915428362/8.gif",
-      "https://cdn.discordapp.com/attachments/699339066029768796/831722126615642172/image4.gif",
-      "https://cdn.discordapp.com/attachments/699339066029768796/831722126872150046/image4_1.gif",
-      "https://cdn.discordapp.com/attachments/699339066029768796/831722157498826812/image6.gif",
-      "https://cdn.discordapp.com/attachments/699339066029768796/831722157749960704/tenor-2.gif",
-      "https://cdn.discordapp.com/attachments/699339066029768796/831722158413316096/Zezeee.gif",
-      "https://cdn.discordapp.com/attachments/699339066029768796/831722091904106546/baby_9.gif",
-      "https://cdn.discordapp.com/attachments/699339066029768796/831722125122469898/image0-4.gif",
-      "https://cdn.discordapp.com/attachments/699339066029768796/831722125618315324/image0.gif",
-      "https://cdn.discordapp.com/attachments/699339066029768796/831722125953335296/image0_4-1.gif",
-      "https://cdn.discordapp.com/attachments/699339066029768796/831722126364246037/image2.gif"
-    ];
-
-    message.channel
-      .send({
-        embed: {
-          description: `**Gif Baby**`,
-          footer: `Requested by ${message.author.username}`,
-          color: `#FF0000`,
-          image: {
-            url: man[Math.floor(Math.random() * man.length)]
-          }
-        }
-      })
-
-.catch(e => {
-        client.log.error(e);
-      });
-  }
-});
 
 
 
