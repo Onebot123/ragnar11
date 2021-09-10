@@ -25,8 +25,8 @@ module.exports = {
     if (!song) {
       queue.channel.leave();
       message.client.queue.delete(message.guild.id);
-      const endembed = new MessageEmbed().setColor("#146DF6")
-        .setAuthor(`Music Queue ended.`, "https://cdn.discordapp.com/attachments/778600026280558617/781024479623118878/ezgif.com-gif-maker_1.gif")
+      const endembed = new MessageEmbed().setColor("#FF0000")
+        .setAuthor(`Music Stop `, "https://cdn.discordapp.com/attachments/793225556501987358/831209697280917524/PicsArt_04-12-07.50.28.jpg")
       return queue.textChannel.send(endembed).catch(console.error);
     }
 
@@ -140,13 +140,13 @@ module.exports = {
       let embed = new MessageEmbed()
            const channel = message.member.voice.channel
       const newsong = new MessageEmbed()
-        .setTitle(":gem: "+song.title)
-        .addField("Time ⏱ :", `\`${song.duration} Minutes 🖇\``, true)
-        .addField("Voice Channel 📣 :",channel.name)
-        .addField("Text Channel 🗯️ :",message.channel.name)
-        .addField("Voulome ❄️ :",100)
+        .setTitle("<a:links:813729922643263558>"   +song.title)
+        .addField("<a:time:813403485902864435> Time Song:", `\`${song.duration}\`Minutes`, true)
+        .addField("<:file:813460388057972736> Text Channel:",message.channel.name)
+        .addField("<a:dark:813714900777959444> Voice Channel:",channel.name)
+        .addField("<a:Voulome:827114142610751578> Voulome:",100)
         .setURL(song.url)
-        .setColor("#146DF6")
+        .setColor("#FF0000")
         .setThumbnail(thumb)
         .setFooter(`Requested by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
       var playingMessage = await queue.textChannel.send(newsong);
@@ -180,7 +180,7 @@ module.exports = {
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           queue.connection.dispatcher.end();
-          queue.textChannel.send(`${user} ⏩ skipped the song`).catch(console.error);
+          queue.textChannel.send(``).catch(console.error);
           collector.stop();
           break;
 
@@ -190,11 +190,11 @@ module.exports = {
           if (queue.playing) {
             queue.playing = !queue.playing;
             queue.connection.dispatcher.pause(true);
-            queue.textChannel.send(`${user} ⏸ paused the music.`).catch(console.error);
+            queue.textChannel.send(``).catch(console.error);
           } else {
             queue.playing = !queue.playing;
             queue.connection.dispatcher.resume();
-            queue.textChannel.send(`${user} ▶ resumed the music!`).catch(console.error);
+            queue.textChannel.send(``).catch(console.error);
           }
           break;
 
@@ -203,34 +203,34 @@ module.exports = {
           if (!canModifyQueue(member)) return;
           if (queue.volume <= 0) {
             queue.volume = 100;
-            queue.connection.dispatcher.setVolumeLogarithmic(100 / 100);
-            queue.textChannel.send(`${user} 🔊 unmuted the music!`).catch(console.error);
+            queue.connection.dispatcher.setVolumeLogarithmic(200 / 200);
+            queue.textChannel.send(``).catch(console.error);
           } else {
             queue.volume = 0;
             queue.connection.dispatcher.setVolumeLogarithmic(0);
-            queue.textChannel.send(`${user} 🔇 muted the music!`).catch(console.error);
+            queue.textChannel.send(``).catch(console.error);
           }
           break;
 
         case "🔉":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
-          if (queue.volume - 10 <= 0) queue.volume = 0;
-          else queue.volume = queue.volume - 10;
-          queue.connection.dispatcher.setVolumeLogarithmic(queue.volume / 100);
+          if (queue.volume - 20 <= 0) queue.volume = 0;
+          else queue.volume = queue.volume - 20;
+          queue.connection.dispatcher.setVolumeLogarithmic(queue.volume / 200);
           queue.textChannel
-            .send(`${user} 🔉 decreased the volume, the volume is now ${queue.volume}%`)
+            .send(``)
             .catch(console.error);
           break;
 
         case "🔊":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
-          if (queue.volume + 10 >= 100) queue.volume = 100;
-          else queue.volume = queue.volume + 10;
-          queue.connection.dispatcher.setVolumeLogarithmic(queue.volume / 100);
+          if (queue.volume + 20 >= 200) queue.volume = 200;
+          else queue.volume = queue.volume + 20;
+          queue.connection.dispatcher.setVolumeLogarithmic(queue.volume / 200);
           queue.textChannel
-            .send(`${user} 🔊 increased the volume, the volume is now ${queue.volume}%`)
+            .send(``)
             .catch(console.error);
           break;
 
@@ -238,14 +238,14 @@ module.exports = {
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           queue.loop = !queue.loop;
-          queue.textChannel.send(`Loop is now ${queue.loop ? "**on**" : "**off**"}`).catch(console.error);
+          queue.textChannel.send(``).catch(console.error);
           break;
 
         case "⏹":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           queue.songs = [];
-          queue.textChannel.send(`${user} ⏹ stopped the music!`).catch(console.error);
+          queue.textChannel.send(``).catch(console.error);
           try {
             queue.connection.dispatcher.end();
           } catch (error) {
@@ -295,10 +295,10 @@ module.exports = {
         const left = ms - seek;
         //define embed
         let nowPlaying = new MessageEmbed()
-          .setAuthor('<a:waya:813455060864073788> Now playing')
+          .setAuthor('♪Now playing♪','https://cdn.discordapp.com/attachments/778600026280558617/781024479623118878/ezgif.com-gif-maker_1.gif','http://harmonymusic.tk')
           .setDescription(`[${song.title}](${song.url})`)
           .setThumbnail(song.thumbnail.url)
-          .setColor("#146DF6")
+          .setColor("#FF0000")
           .setFooter(`Requested by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
       //if its a stream
       if(ms >= 10000) {
@@ -321,7 +321,7 @@ module.exports = {
           let queueEmbed = new MessageEmbed()
             .setTitle("Music Queue")
             .setDescription(description)
-            .setColor("#146DF6")
+            .setColor("#FF0000")
              ;
       
           const splitDescription = splitMessage(description, {
@@ -346,7 +346,7 @@ module.exports = {
           let lyrics = null;
           let temEmbed = new MessageEmbed()
           .setAuthor("Searching...", "https://cdn.discordapp.com/attachments/778600026280558617/781024479623118878/ezgif.com-gif-maker_1.gif").setFooter("Lyrics")
-          .setColor("#146DF6")
+          .setColor("#FF0000")
           let result = await message.channel.send(temEmbed)
           try {
             lyrics = await lyricsFinder(queue.songs[0].title,"");
@@ -358,7 +358,7 @@ module.exports = {
           let lyricsEmbed = new MessageEmbed()
             .setTitle("🗒️ Lyrics")
             .setDescription(lyrics)
-            .setColor("#146DF6")
+            .setColor("#FF0000")
       
           if (lyricsEmbed.description.length >= 2048)
       
