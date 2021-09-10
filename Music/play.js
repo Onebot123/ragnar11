@@ -139,13 +139,13 @@ catch {
       }
 serverQueue.songs.push(song);
       const newsong = new MessageEmbed()
-        .setTitle("<:emoji_15:828754610318606356> "+song.title)
+        .setTitle("<a:links:813729922643263558> "+song.title)
         .setURL(song.url)
         .setColor("#FF0000")
         .setThumbnail(thumb)
-         .addField("<:emoji_21:831218745996607516> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
-        .addField("<:emoji_17:828754667265720320> Length:", `\`${song.duration} Minutes\``, true)
-        .addField("<:emoji_14:828754585781796904> Volume:", `\`100\``, true)
+         .addField("Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
+        .addField("<a:time:813403485902864435> Length:", `\`${song.duration} Minutes\``, true)
+        .addField("<a:Voulome:827114142610751578>  Volume:", `\`100\``, true)
         .addField("Position in queue:", `**\`${serverQueue.songs.length - 1}\`**`, true)
         return serverQueue.textChannel
         .send(newsong)
