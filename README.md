@@ -2,7 +2,7 @@
 
 | **User Commands**
 
-> **\invite(inv)\ • \support\ • \`about\` • \`ping\` • \`prefix\` • \`uptime\` • \`se\` • \`avatar\` • \`serverinfo(sifo)
+> **\`invite(inv)\` • \`support\` • \`about\` • \`ping\` • \`prefix\` • \`uptime\` • \`se\` • \`avatar\` • \`serverinfo(sifo)
 
  | **Music Commands**
 
